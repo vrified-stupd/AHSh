@@ -59,7 +59,7 @@ chmod +x build32.sh
 Run this compile script:
 
 ```
-chmod +x build32.sh
+chmod +x build64.sh
 ./build64.sh
 ```
 
