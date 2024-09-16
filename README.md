@@ -25,7 +25,7 @@ This will clone the repo into your system.
 Type:
 
 ```
-cd AHSh\buildsh
+cd AHSh/buildsh
 ```
 
 This will change your directory to where the compile files are.
@@ -39,12 +39,24 @@ chmod +x buildcom.sh
 ./buildcom.sh
 ```
 
-When you are done building the commands, run the compile script (x86 ONLY!!! x86_64 will come soon and ARM64 is a possibility):
+#### For x86 machines
+
+Run this compile script:
 
 ```
 chmod +x build32.sh
 ./build32.sh
 ```
+
+#### For x86_64
+
+Run this compile script:
+
+```
+chmod +x build32.sh
+./build64.sh
+```
+
 ### Step 4
 
 Now you can run AHSh without any errors (I hope...) by typing:
