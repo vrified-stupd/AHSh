@@ -8,6 +8,7 @@ char *builtin_str[] = {
   "help",
   "exit",
   "ver",
-  "crdir"
+  "crdir",
+  "crfile"
 };
 #endif

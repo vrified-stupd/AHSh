@@ -8,6 +8,6 @@ int sh_ver(char **args)
   int i;
   printf("AHSh a1.0.0:\n");
 
-  printf("Name: kappy wappy");
+  printf("Name: kappy wappy \n");
   return 1;
 }

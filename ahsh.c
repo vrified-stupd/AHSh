@@ -1,7 +1,4 @@
 #include "include/libs.h"
-#include "commands.h"
-#include "commands/str.h"
-
 /*
   Function Declarations for builtin shell commands:
  */
@@ -9,16 +6,18 @@ int sh_echo(char **args);
 int sh_exit(char **args);
 int sh_help(char **args);
 
+int sh_num_builtins() {
+  return sizeof(builtin_str) / sizeof(char *);
+}
+
 int (*builtin_func[]) (char **) = {
   &sh_echo,
   &sh_help,
   &sh_exit,
-  &sh_ver
+  &sh_ver,
+  &sh_crdir,
+  &sh_crfile
 };
-
-int sh_num_builtins() {
-  return sizeof(builtin_str) / sizeof(char *);
-}
 
 int sh_echo(char **args)
 {
@@ -39,7 +38,7 @@ int sh_echo(char **args)
 int sh_help(char **args)
 {
   int i;
-  printf("Commands:\n");
+  printf("Builtin Commands:\n");
 
   for (i = 0; i < sh_num_builtins(); i++) {
     printf("  %s\n", builtin_str[i]);
@@ -186,7 +185,7 @@ void loop_sh(void)
   int status;
 
   do {
-    printf(": ");
+    printf(">: ");
     line = shReadLine();
     args = shsplitline(line);
     status = sh_Execute(args);
@@ -198,7 +197,7 @@ void loop_sh(void)
 
 int main(int argc, char **argv)
 {
-  printf("Type \"help\" for commands\n");
+  printf("AHSh \na1.0.0 \nType \"help\" for commands\n");
   loop_sh();
 
   return EXIT_SUCCESS;

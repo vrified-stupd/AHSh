@@ -8,4 +8,9 @@
 #include <string.h>
 #include <sys/stat.h>
 #include "../ahsh.h"
+#include "commands.h"
+#include "../commands/str.h"
+#include <time.h>
+#include <unistd.h>
+#include <fcntl.h>
 #endif

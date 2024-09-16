@@ -6,5 +6,8 @@ int (*builtin_func[]) (char **);
 int sh_num_builtins();
 int sh_launch(char **args);
 int sh_Execute(char **args);
+int sh_echo(char **args);
+int sh_exit(char **args);
+int sh_help(char **args);
 
 #endif
