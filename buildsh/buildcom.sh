@@ -1,7 +1,7 @@
 sudo echo PERMISSIONS GRANTED
 cd ../
 echo Starting AHSH Command Build...
-HEADER=commands.h
+HEADER=include/commands.h
 echo -n "" > $HEADER
 echo "// DON'T DELETE THIS FILE!" >> $HEADER
 echo "#ifndef COMMANDS_H" >> $HEADER

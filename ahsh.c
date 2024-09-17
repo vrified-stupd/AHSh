@@ -16,7 +16,8 @@ int (*builtin_func[]) (char **) = {
   &sh_exit,
   &sh_ver,
   &sh_crdir,
-  &sh_crfile
+  &sh_crfile,
+  &sh_clear
 };
 
 int sh_echo(char **args)

@@ -4,4 +4,5 @@
 #include "../term/ver.h"
 #include "../term/crdir.h"
 #include "../term/crfile.h"
+#include "../term/clear.h"
 #endif
