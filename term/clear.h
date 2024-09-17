@@ -10,5 +10,5 @@ void clearScreen()
 
 
 int sh_clear(char **args) {
-  clearScreen();
+  	clearScreen();
 }

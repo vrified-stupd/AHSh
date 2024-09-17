@@ -5,9 +5,9 @@ int sh_ver(char **args);
 
 int sh_ver(char **args)
 {
-  int i;
-  printf("AHSh a1.0.0:\n");
+    int i;
+    printf("AHSh a1.1.2:\n");
 
-  printf("Name: kappy wappy \n");
-  return 1;
+    printf("Name: kappy wappy \n");
+    return 1;
 }
