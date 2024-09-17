@@ -1,6 +1,6 @@
 # AHSh
 
-Advanced Hybrid Shell or AHSh for short, is a simple shell that you can use on Linux or port to an OS you made.
+Advanced Hybrid Shell or AHSh for short, is a simple shell that you can use on Linux or port to an OS you made. I made this shell out of spite because my friend said "needs more work" to some shell commands I made for them.
 
 ## Why???
 
