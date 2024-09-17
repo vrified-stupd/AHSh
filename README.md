@@ -66,3 +66,25 @@ chmod +x build64.sh
 #### Step 4
 
 Now you can run AHSh without any errors (I hope...) by typing running the file via terminal
+
+## How to replace bash with this in Linux (idk why you would do this lmao)
+
+### Step 1
+
+Open ".bashrc" with any text editor, this file is located in your home folder and is a hidden file.
+
+### Step 2
+
+Go to the end of the file and type:
+
+```
+cd path/to/ahsh/elf
+```
+
+Make sure to change "path/to/ahsh/elf" to the path of the elf file.
+
+###
+
+Save and everytime you open the terminal, you should be running AHSh!
+
+If you want to revert back to bash, just remove the line you added and save, everything will revert back to normal.
