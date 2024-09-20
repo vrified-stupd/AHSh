@@ -78,10 +78,10 @@ Open ".bashrc" with any text editor, this file is located in your home folder an
 Go to the end of the file and type:
 
 ```
-cd path/to/ahsh/elf
+./path/to/ahsh/elf
 ```
 
-Make sure to change "path/to/ahsh/elf" to the path of the elf file.
+Make sure to change "path/to/ahsh/elf" to the path of the elf file (common sense lol).
 
 ###
 
