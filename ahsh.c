@@ -1,7 +1,6 @@
 #include "include/libs.h"
-/*
-  Function Declarations for builtin shell commands:
- */
+
+// Function declarations for builtin commands
 int sh_echo(char **args);
 int sh_exit(char **args);
 int sh_help(char **args);
@@ -10,17 +9,6 @@ int sh_num_builtins() {
   	return sizeof(builtin_str) / sizeof(char *);
 }
 
-int (*builtin_func[]) (char **) = {
-	&sh_echo,
-	&sh_help,
-	&sh_exit,
-	&sh_ver,
-	&sh_crdir,
-	&sh_crfile,
-	&sh_clear,
-	&sh_reboot
-};
-
 int sh_echo(char **args)
 {
 	if (args[1] == NULL) {
@@ -28,11 +16,11 @@ int sh_echo(char **args)
 	}
 		else {
 			int i = 1;
-		while (args[i] != NULL) {
-		printf("%s ", args[i]);
-		i++;
-		}
-		printf("\n");
+			while (args[i] != NULL) {
+				printf("%s ", args[i]);
+				i++;
+			}
+			printf("\n");
 		}
 	return 1;
 }
@@ -80,13 +68,13 @@ int sh_Execute(char **args)
 	int i;
 
 	if (args[0] == NULL) {
-		// An empty command was entered.
+		// An empty command was entered. Like how my brain processes math problems :(
 		return 1;
 	}
 
 	for (i = 0; i < sh_num_builtins(); i++) {
 		if (strcmp(args[0], builtin_str[i]) == 0) {
-		return (*builtin_func[i])(args);
+			return (*builtin_func[i])(args);
 		}
 	}
 
@@ -149,35 +137,35 @@ char *shReadLine(void)
 
 char **shsplitline(char *line)
 {
-  int bufsize = sh_TOK_BUFSIZE, position = 0;
-  char **tokens = malloc(bufsize * sizeof(char*));
-  char *token, **tokens_backup;
+	int bufsize = sh_TOK_BUFSIZE, position = 0;
+	char **tokens = malloc(bufsize * sizeof(char*));
+	char *token, **tokens_backup;
 
-  if (!tokens) {
-    fprintf(stderr, "sh: allocation error\n");
-    exit(EXIT_FAILURE);
-  }
+	if (!tokens) {
+		fprintf(stderr, "sh: allocation error\n");
+		exit(EXIT_FAILURE);
+	}
 
-  token = strtok(line, sh_TOK_DELIM);
-  while (token != NULL) {
-    tokens[position] = token;
-    position++;
+	token = strtok(line, sh_TOK_DELIM);
+	while (token != NULL) {
+		tokens[position] = token;
+		position++;
 
-    if (position >= bufsize) {
-      bufsize += sh_TOK_BUFSIZE;
-      tokens_backup = tokens;
-      tokens = realloc(tokens, bufsize * sizeof(char*));
-      if (!tokens) {
-		free(tokens_backup);
-        fprintf(stderr, "sh: allocation error\n");
-        exit(EXIT_FAILURE);
-      }
-    }
+		if (position >= bufsize) {
+		bufsize += sh_TOK_BUFSIZE;
+		tokens_backup = tokens;
+		tokens = realloc(tokens, bufsize * sizeof(char*));
+		if (!tokens) {
+			free(tokens_backup);
+			fprintf(stderr, "sh: allocation error\n");
+			exit(EXIT_FAILURE);
+		}
+		}
 
-    token = strtok(NULL, sh_TOK_DELIM);
-  }
-  tokens[position] = NULL;
-  return tokens;
+		token = strtok(NULL, sh_TOK_DELIM);
+	}
+	tokens[position] = NULL;
+	return tokens;
 }
 
 void loop_sh(void)
@@ -187,7 +175,8 @@ void loop_sh(void)
 	int status;
 
 	do {
-		printf(">: ");
+		printf("%s", prefix);
+		printf(" ");
 		line = shReadLine();
 		args = shsplitline(line);
 		status = sh_Execute(args);
@@ -199,7 +188,10 @@ void loop_sh(void)
 
 int main(int argc, char **argv)
 {
-	printf("AHSh \na1.1.2 \nType \"help\" for commands\n");
+	printf("%s", shName);
+	printf("\n");
+	printf("%s", shVersion);
+	printf("\nType \"help\" for commands\n"); // doesn't work in real life
 	loop_sh();
 
 	return EXIT_SUCCESS;

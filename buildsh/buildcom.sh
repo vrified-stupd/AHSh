@@ -1,4 +1,3 @@
-sudo echo PERMISSIONS GRANTED
 cd ../
 echo Starting AHSH Command Build...
 HEADER=include/commands.h
