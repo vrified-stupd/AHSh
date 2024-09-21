@@ -67,6 +67,16 @@ chmod +x build64.sh
 
 Now you can run AHSh without any errors (I hope...) by typing running the file via terminal
 
+### Using install.py
+
+#### Step 1
+
+Download "install.py" and run it. Follow the installation instructions.
+
+#### Step 2
+
+You're done! You should find the "AHSh" directory in your home directory.
+
 ## How to replace bash with this in Linux (idk why you would do this lmao)
 
 ### Step 1
@@ -83,7 +93,7 @@ Go to the end of the file and type:
 
 Make sure to change "path/to/ahsh/elf" to the path of the elf file (common sense lol).
 
-###
+### Step 3
 
 Save and everytime you open the terminal, you should be running AHSh!
 
