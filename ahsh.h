@@ -9,5 +9,9 @@ int sh_Execute(char **args);
 int sh_echo(char **args);
 int sh_exit(char **args);
 int sh_help(char **args);
+char **shsplitline(char *line);
+char *shReadLine(void);
+int sh_Execute(char **args);
+int sh_launch(char **args);
 
 #endif

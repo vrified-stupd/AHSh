@@ -7,7 +7,7 @@ def install(unstable : str):
     if unstable == "0":
         print("Starting install (Assuming Git is installed)...")
         os.chdir(os.path.expanduser("~"))
-        os.system('git clone https://github.com/vrified-stupd/AHSh/ --branch a2.0.0')
+        os.system('git clone https://github.com/vrified-stupd/AHSh/ --branch a2.1.0')
         os.chdir("AHSh/buildsh")
         os.system('echo $PWD')
         os.system('sh ./buildcom.sh')
@@ -23,7 +23,7 @@ def install(unstable : str):
         os.system('make')
         sys.exit(0)
     else:
-        print("Wow, you got this error! You're dumb! (respectfully)'")
+        print("Wow, you got this error! You're dumb! (respectfully)") # You get this error if you're actually stupid
 
 
 while True:

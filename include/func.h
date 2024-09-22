@@ -14,7 +14,14 @@ int (*builtin_func[]) (char **) = {
 	&sh_crdir,
 	&sh_crfile,
 	&sh_clear,
-	&sh_reboot
+	&sh_reboot,
+	&sh_add,
+	&sh_sub,
+	&sh_mul,
+	&sh_div,
+	&sh_pcd,
+	&sh_del,
+	&sh_rename
 };
 
 #endif

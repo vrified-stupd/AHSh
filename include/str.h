@@ -11,6 +11,13 @@ char *builtin_str[] = {
   "crdir",
   "crfile",
   "clear",
-  "reboot"
+  "reboot",
+  "add",
+  "sub",
+  "mul",
+  "div",
+  "pcd",
+  "del",
+  "rename"
 };
 #endif

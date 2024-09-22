@@ -12,6 +12,7 @@
 #include <fcntl.h>
 #include <dirent.h>
 #include <stdbool.h>
+#include <dirent.h> 
 
 // Local Headers
 #include "properties.h"

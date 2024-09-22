@@ -7,6 +7,7 @@ echo "#define COMMANDS_H" >> $HEADER
 for file in term/*.h
 do
     echo "#include \"../$file\"" >> $HEADER
+    echo "$file"
 done
 echo "#endif" >> $HEADER
 echo BUILD FINISHED
