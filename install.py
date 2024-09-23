@@ -36,11 +36,13 @@ def install(unstable : str):
 
 
 while True:
-    unstableInput = input("Choose between unstable and release version of AHSh (0 is release and 1 is unstable) \n>: ")
+    unstableInput = input("Choose between unstable and release version of AHSh (0 is release, 1 is unstable, and 2 is exit) \n>: ")
 
     if unstableInput == "0":
         install("0")
     elif unstableInput == "1":
         install("1")
+    elif unstableInput == "2":
+        sys.exit(0)
     else:
         print("INVALID OPTION")
