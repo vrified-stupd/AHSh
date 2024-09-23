@@ -12,7 +12,7 @@ To run AHSh, you could download a release and run the elf through a terminal (bo
 
 ### Pre-requisites
 
-- libc6-dev-i386
+- libc6-dev-i386 or anything similar (not needed for 64 bit version)
 
 ### Installation
 
