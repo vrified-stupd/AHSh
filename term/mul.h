@@ -8,7 +8,7 @@ int sh_mul(char **args) {
         return 1;
     }
 
-    double pro = 0.0;
+    double pro = 1.0;
 
     for (int i = 1; args[i] != NULL; i++) {
         char *endptr;

@@ -21,7 +21,9 @@ int (*builtin_func[]) (char **) = {
 	&sh_div,
 	&sh_pcd,
 	&sh_del,
-	&sh_rename
+	&sh_rename,
+	&sh_list,
+	&sh_cd
 };
 
 #endif

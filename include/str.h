@@ -18,6 +18,8 @@ char *builtin_str[] = {
   "div",
   "pcd",
   "del",
-  "rename"
+  "rename",
+  "list",
+  "cd"
 };
 #endif
