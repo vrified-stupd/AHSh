@@ -4,7 +4,7 @@ import sys
 import os
 
 def install(unstable : str):
-    version = "2.1.0"
+    version = "2.1.1"
 
     if unstable == "0":
         print("Starting install (Assuming Git is installed)...")
