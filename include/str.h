@@ -20,6 +20,8 @@ char *builtin_str[] = {
   "del",
   "rename",
   "list",
-  "cd"
+  "cd",
+  "pfc",
+  "sex"
 };
 #endif

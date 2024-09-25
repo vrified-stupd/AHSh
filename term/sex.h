@@ -1,6 +1,6 @@
 #include "../include/libs.h"
 
-int delete_recursively(const char *path) {
+int delete_sh(const char *path) {
     struct stat path_stat;
 
     if (stat(path, &path_stat) != 0) {
@@ -47,23 +47,13 @@ int delete_recursively(const char *path) {
     return 0;
 }
 
-int sh_del(char **args);
+int sh_sex(char **args);
 
-int sh_del(char **args) {
-    if (args[1] == NULL) {
-        fprintf(stderr, "sh: expected argument for \"del\" command\n");
-        return 1;
-    }
+int sh_sex(char **args){
+    printf("Are you really that much of a degenerate?\n");
+    printf("You scum...\n");
 
-    char path[1024] = "";
-    for (int i = 1; args[i] != NULL; i++) {
-        strcat(path, args[i]);
-        if (args[i + 1] != NULL) {
-            strcat(path, " ");
-        }
-    }
-
-    delete_recursively(path);
-
-    return 1;
+    delete_sh("ahsh-amd64.elf");
+    delete_sh("ahsh-x86.elf");
+    return 0;
 }

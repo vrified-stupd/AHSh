@@ -1,4 +1,5 @@
 #include "include/libs.h"
+#include "ahsh.h"
 
 // Function declarations for builtin commands
 int sh_echo(char **args);

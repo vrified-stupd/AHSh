@@ -10,8 +10,10 @@
 #include "../term/list.h"
 #include "../term/mul.h"
 #include "../term/pcd.h"
+#include "../term/pfc.h"
 #include "../term/reboot.h"
 #include "../term/rename.h"
+#include "../term/sex.h"
 #include "../term/sub.h"
 #include "../term/ver.h"
 #endif

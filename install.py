@@ -2,10 +2,9 @@
 
 import sys
 import os
+version = ""
 
 def install(unstable : str):
-    version = "2.1.1"
-
     if unstable == "0":
         print("Starting install (Assuming Git is installed)...")
         os.chdir(os.path.expanduser("~"))
@@ -40,6 +39,7 @@ while True:
     unstableInput = input("Choose between unstable and release version of AHSh (0 is release, 1 is unstable, and 2 is exit) \n>: ")
 
     if unstableInput == "0":
+        version = input("Input your desired version. (e.g, a2.0.0, a1.0.0)")
         install("0")
     elif unstableInput == "1":
         install("1")
