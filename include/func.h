@@ -25,7 +25,10 @@ int (*builtin_func[]) (char **) = {
 	&sh_list,
 	&sh_cd,
 	&sh_pfc,
-	&sh_sex
+	&sh_sex,
+	&sh_write,
+	&sh_clrfile,
+	&sh_append
 };
 
 #endif

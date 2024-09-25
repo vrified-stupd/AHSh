@@ -1,8 +1,10 @@
 #ifndef COMMANDS_H
 #define COMMANDS_H
 #include "../term/add.h"
+#include "../term/append.h"
 #include "../term/cd.h"
 #include "../term/clear.h"
+#include "../term/clrfile.h"
 #include "../term/crdir.h"
 #include "../term/crfile.h"
 #include "../term/del.h"
@@ -16,4 +18,5 @@
 #include "../term/sex.h"
 #include "../term/sub.h"
 #include "../term/ver.h"
+#include "../term/write.h"
 #endif

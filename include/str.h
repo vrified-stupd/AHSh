@@ -22,6 +22,9 @@ char *builtin_str[] = {
   "list",
   "cd",
   "pfc",
-  "sex"
+  "sex",
+  "write",
+  "clrfile",
+  "append"
 };
 #endif
