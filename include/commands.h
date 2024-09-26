@@ -10,6 +10,7 @@
 #include "../term/del.h"
 #include "../term/div.h"
 #include "../term/list.h"
+#include "../term/move.h"
 #include "../term/mul.h"
 #include "../term/pcd.h"
 #include "../term/pfc.h"

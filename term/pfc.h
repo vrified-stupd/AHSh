@@ -33,6 +33,7 @@ int sh_pfc(char **args)
     }
     fgets(fileContents, 99999, fptr);
     printf("%s", fileContents);
+    printf("%s", "\n");
     fclose(fptr);
     
     return 1;

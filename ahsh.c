@@ -176,7 +176,19 @@ void loop_sh(void)
 	int status;
 
 	do {
-		printf("%s", prefix);
+		if (shInfo == "1") {
+			printf("%s", shName);
+			printf("|%s", name);
+
+			char cwd[1024];
+
+			if (getcwd(cwd, sizeof(cwd)) != NULL) {
+				printf(" %s", cwd);
+			} else {
+				perror("sh: getcwd");
+			}
+		}
+		printf(" %s", prefix);
 		printf(" ");
 		line = shReadLine();
 		args = shsplitline(line);

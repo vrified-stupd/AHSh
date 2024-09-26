@@ -25,6 +25,7 @@ char *builtin_str[] = {
   "sex",
   "write",
   "clrfile",
-  "append"
+  "append",
+  "move"
 };
 #endif
