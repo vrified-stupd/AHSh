@@ -12,7 +12,7 @@ def install(unstable : str):
         chooseName = input("Choose a name \n>: ")
         chooseShInfo = input("Do you want the shell to display basic info (1 is yes, 0 is no. Typing anything else will default to 0)? \n>: ")
         properties = open("AHSh/include/properties.h", "w")
-        properties.write("#ifndef PROPERTIES_H\n#define PROPERTIES_H\n\n#include \"libs.h\"\n// Shell Properties. Deleting a value/variable can make the shell have segfaults.\n\nchar *shVersion = \""+version+"\"; // Shell Version. You can change this.\nchar *name = \""+chooseName+"\"; // SHOULD CHANGE BASED ON THE USER INPUT DURING INSTALLATION\nchar *prefix = \">:\"; // Shell prefix, that sums it up lol\nchar *shName = \"AHSh\"; // Shell name, the name of the shells\nchar *shInfo = "+chooseShInfo+"; // Shows stuff like current dir and name in a newline. 0 means off, 1 means on\n\n#endif") # I'm sorry you had to see this line of code
+        properties.write("#ifndef PROPERTIES_H\n#define PROPERTIES_H\n\n#include \"libs.h\"\n// Shell Properties. Deleting a value/variable can make the shell have segfaults.\n\nchar *shVersion = \""+version+"\"; // Shell Version. You can change this.\nchar *name = \""+chooseName+"\"; // SHOULD CHANGE BASED ON THE USER INPUT DURING INSTALLATION\nchar *prefix = \">:\"; // Shell prefix, that sums it up lol\nchar *shName = \"AHSh\"; // Shell name, the name of the shells\nchar *shInfo = \""+chooseShInfo+"\"; // Shows stuff like current dir and name in a newline. 0 means off, 1 means on\n\n#endif") # I'm sorry you had to see this line of code
         properties.close()
         os.chdir("AHSh/buildsh")
         os.system('echo $PWD')
