@@ -14,6 +14,6 @@ char *shReadLine(void);
 int sh_Execute(char **args);
 int sh_launch(char **args);
 void loop_sh(void);
-int main(int argc, char **argv);
+void info();
 
 #endif

@@ -199,13 +199,16 @@ void loop_sh(void)
 	} while (status);
 }
 
-int main(int argc, char **argv)
-{
+void info() {
 	printf("%s", shName);
 	printf("\n");
 	printf("%s", shVersion);
 	printf("\nType \"help\" for commands\n"); // doesn't work in real life
 	loop_sh();
+}
 
+int main(int argc, char **argv)
+{
+	info();
 	return EXIT_SUCCESS;
 }
