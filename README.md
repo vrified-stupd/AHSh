@@ -96,6 +96,6 @@ If you want to revert back to bash, just remove the line you added and save, eve
 - [ ] Custom Terminals
 - [ ] ARM64 Support
 - [ ] Scripting
-- [X] File Commands
-- [X] 64 bit version
-- [X] Operation Comands
+- [x] File Commands
+- [x] 64 bit version
+- [x] Operation Comands
