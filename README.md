@@ -94,7 +94,7 @@ If you want to revert back to bash, just remove the line you added and save, eve
 (Sorted by priority)
 
 - [ ] Custom Terminals
-- [ ] ARM64 Support
+~~- [ ] ARM64 Support~~ (Cancelled)
 - [ ] Scripting
 - [x] File Commands
 - [x] 64 bit version
