@@ -8,6 +8,7 @@ def install(unstable : str):
     if unstable == "0":
         print("Starting install (Assuming Git is installed)...")
         os.chdir(os.path.expanduser("~"))
+        os.system("rm -rf AHSh")
         os.system("git clone https://github.com/vrified-stupd/AHSh/ --branch "+version)
         chooseName = input("Choose a name \n>: ")
         chooseShInfo = input("Do you want the shell to display basic info (1 is yes, 0 is no. Typing anything else will default to 0)? \n>: ")
