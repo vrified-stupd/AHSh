@@ -26,6 +26,7 @@ char *builtin_str[] = {
   "write",
   "clrfile",
   "append",
-  "move"
+  "move",
+  "copy"
 };
 #endif

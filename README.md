@@ -88,14 +88,3 @@ Make sure to change "path/to/ahsh/elf" to the path of the elf file (common sense
 Save and everytime you open the terminal, you should be running AHSh!
 
 If you want to revert back to bash, just remove the line you added and save, everything will revert back to normal.
-
-## TODO List
-
-(Sorted by priority)
-
-- [ ] Custom Terminals
-~~- [ ] ARM64 Support~~ (Cancelled)
-- [ ] Scripting
-- [x] File Commands
-- [x] 64 bit version
-- [x] Operation Comands

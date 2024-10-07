@@ -16,12 +16,16 @@ def install(unstable : str):
         properties.close()
         os.chdir("AHSh/buildsh")
         os.system('echo $PWD')
+        os.system('sh ./installdep.sh')
         os.system('sh ./buildcom.sh')
+        os.chdir("../")
+        print(os.getcwd())
         os.system('make')
         sys.exit(0)
     elif unstable == "1":
         print("Starting install (Assuming Git is installed)...")
         os.chdir(os.path.expanduser("~"))
+        os.system("rm -rf AHSh")
         os.system('git clone https://github.com/vrified-stupd/AHSh.git')
         chooseName = input("Choose a name \n>: ")
         chooseShInfo = input("Do you want the shell to display basic info (1 is yes, 0 is no. Typing anything else will default to 0)? \n>: ")
@@ -32,7 +36,9 @@ def install(unstable : str):
         os.system('echo $PWD')
         os.system('sh ./buildcom.sh')
         os.system('make')
-        sys.exit(0)
+        os.chdir("../")
+        print(os.getcwd())
+        sys.exit()
     else:
         print("Wow, you got this error! You're dumb! (respectfully)") # You get this error if you're actually stupid
 
