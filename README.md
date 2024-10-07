@@ -8,7 +8,7 @@ Advanced Hybrid Shell or AHSh for short, is a simple shell that you can use on L
 
 ## How to run AHSh?
 
-To run AHSh, you could download a release and run the elf through a terminal (boring) or you could compile it in your Linux system (not boring). These instructions will help you compile AHSh, not download a release! If you don't want to do this process, download the elf at the release branch you want. You could also run `wget -O install.py https://raw.githubusercontent.com/vrified-stupd/AHSh/refs/heads/main/install.py && python3 install.py` to automatically do the compiling for you. (You still have to download the dependancies below using either method.)
+To run AHSh, you could download a release and run the elf through a terminal (boring) or you could compile it in your Linux system (not boring). These instructions will help you compile AHSh, not download a release! If you don't want to do this process, download the elf at the release branch you want. You could also run `wget -O install.py https://raw.githubusercontent.com/vrified-stupd/AHSh/refs/heads/main/install.py && python3 install.py` to automatically do the compiling for you. (You still have to download the dependancies below to use AHSh)
 
 ### Pre-requisites
 
