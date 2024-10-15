@@ -17,7 +17,6 @@ def install(unstable : str):
         properties.close()
         os.chdir("AHSh/buildsh")
         os.system('echo $PWD')
-        os.system('sh ./installdep.sh')
         os.system('sh ./buildcom.sh')
         os.chdir("../")
         print(os.getcwd())
