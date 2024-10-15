@@ -20,7 +20,8 @@ def install(unstable : str):
         os.system('sh ./buildcom.sh')
         os.chdir("../")
         print(os.getcwd())
-        os.system('make ahsh_make')
+        os.system('make')
+        print("Go to the build folder and run AHSh via terminal with: ./ahsh-amd64.elf or ./ahsh-x86.elf")
         sys.exit(0)
     elif unstable == "1":
         print("Starting install (Assuming Git is installed)...")
@@ -35,9 +36,10 @@ def install(unstable : str):
         os.chdir("AHSh/buildsh")
         os.system('echo $PWD')
         os.system('sh ./buildcom.sh')
-        os.system('make ahsh_make')
+        os.system('make')
         os.chdir("../")
         print(os.getcwd())
+        print("Go to the build folder and run AHSh via terminal with: ./ahsh-amd64.elf or ./ahsh-x86.elf")
         sys.exit()
     else:
         print("Wow, you got this error! You're dumb! (respectfully)") # You get this error if you're actually stupid
