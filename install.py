@@ -20,7 +20,7 @@ def install(unstable : str):
         os.system('sh ./buildcom.sh')
         os.chdir("../")
         print(os.getcwd())
-        os.system('make')
+        os.system('make ahsh_make')
         sys.exit(0)
     elif unstable == "1":
         print("Starting install (Assuming Git is installed)...")
@@ -35,7 +35,7 @@ def install(unstable : str):
         os.chdir("AHSh/buildsh")
         os.system('echo $PWD')
         os.system('sh ./buildcom.sh')
-        os.system('make')
+        os.system('make ahsh_make')
         os.chdir("../")
         print(os.getcwd())
         sys.exit()
