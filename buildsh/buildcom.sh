@@ -6,8 +6,9 @@ echo "#ifndef COMMANDS_H" >> $HEADER
 echo "#define COMMANDS_H" >> $HEADER
 for file in term/*.h
 do
+    echo "Adding $file"
     echo "#include \"../$file\"" >> $HEADER
-    echo "$file"
+    echo "Added $file"
 done
 echo "#endif" >> $HEADER
 echo BUILD FINISHED

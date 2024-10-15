@@ -4,16 +4,15 @@ Advanced Hybrid Shell or AHSh for short, is a simple shell that you can use on L
 
 ## Why???
 
-"Why does this exist?" you might ask, well, I (stupd) am designing this shell for AHK which you could find [here](https://github.com/Libre-X-Project/AHK-main). You might also ask "Why do I need this?", the thing is, you don't! This shell caters to a specific group of people (osdevs and hobbyists) and not the average consumer.
+"Why does this exist?" you might ask, well, I (stupd) am designing this shell for AHK which you could find [here](https://github.com/Libre-X-Project/AHK-main). You might also ask "Why do I need this?", the thing is, you don't! This shell caters to a specific group of people (osdevs) and not the average consumer.
 
 ## How to run AHSh?
 
-To run AHSh, you could download a release and run the elf through a terminal (boring) or you could compile it in your Linux system (not boring). These instructions will help you compile AHSh, not download a release! If you don't want to do this process, download the elf at the release branch you want. You could also run `wget -O install.py https://raw.githubusercontent.com/vrified-stupd/AHSh/refs/heads/main/install.py && python3 install.py` to automatically do the compiling for you. (You still have to download the dependancies below to use/compile AHSh)
+To run AHSh, you could download a release and run the elf through a terminal (boring) or you could compile it in your Linux system (not boring). These instructions will help you compile AHSh, not download a release!
 
 ### Pre-requisites
 
 - libc6-dev-i386
-- GCC 12.2 or Above (Older versions may work but are untested)
 
 ### Installation
 
@@ -66,7 +65,7 @@ chmod +x build64.sh
 
 #### Step 4
 
-Now you can run AHSh without any errors (I hope...) by typing running the file via terminal.
+Now you can run AHSh without any errors (I hope...) by typing running the file via terminal
 
 ## How to replace bash with this in Linux (idk why you would do this lmao)
 

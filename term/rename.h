@@ -1,5 +1,7 @@
 #include "../include/libs.h"
 
+int sh_rename(char **args);
+
 int sh_rename(char **args) {
     if (args[1] == NULL || args[2] == NULL) {
         fprintf(stderr, "sh: expected two arguments for \"rename\" command\n");
