@@ -18,9 +18,9 @@ def install(unstable : str):
         os.chdir("AHSh/buildsh")
         os.system('echo $PWD')
         os.system('sh ./buildcom.sh')
+        os.system('make')
         os.chdir("../")
         print(os.getcwd())
-        os.system('make')
         print("Go to the build folder and run AHSh via terminal with: ./ahsh-amd64.elf or ./ahsh-x86.elf")
         sys.exit(0)
     elif unstable == "1":
